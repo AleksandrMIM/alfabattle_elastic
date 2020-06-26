@@ -7,6 +7,7 @@ import com.alfabattle.repository.FileRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.core.mapping.IndexCoordinates;
@@ -34,8 +35,11 @@ public class SampleDataSet {
   private final FileRepository fileRepository;
   private final JsonFileProperty jsonFileProperty;
 
+  @SneakyThrows
   @PostConstruct
   public void init() {
+    Thread.sleep(10_000);
+
     IndexCoordinates indexCoordinates = IndexCoordinates.of(INDEX_NAME);
     if (!template.indexOps(indexCoordinates).exists()) {
       template.indexOps(indexCoordinates).create();
