@@ -1,0 +1,32 @@
+{
+  "articles": [
+    {
+      "title": "Hello world 2",
+      "authors": [
+        {
+          "name": "Xio Xa 2"
+        },
+        {
+          "name": "Xio Ya 2"
+        }
+      ],
+      "tags": [
+        "hi", "world", "2"
+      ]
+    },
+    {
+      "title": "Hello universe 2",
+      "authors": [
+        {
+          "name": "Xio Xa 2"
+        },
+        {
+          "name": "Xio Ya 2"
+        }
+      ],
+      "tags": [
+        "hi", "universe", "2"
+      ]
+    }
+  ]
+}

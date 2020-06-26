@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "json.files",
+      "type": "java.lang.String",
+      "description": "Description for json.files."
+    },
+    {
+      "name": "elasticsearch.uri",
+      "type": "java.lang.String",
+      "description": "Description for elasticsearch.uri."
+    }
+  ]
+}
