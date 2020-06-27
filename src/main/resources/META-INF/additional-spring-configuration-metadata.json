@@ -1,14 +1,14 @@
 {
   "properties": [
     {
-      "name": "json.files",
+      "name": "json.loans",
       "type": "java.lang.String",
-      "description": "Description for json.files."
+      "description": "Description for json.loans."
     },
     {
-      "name": "elasticsearch.uri",
+      "name": "json.persons",
       "type": "java.lang.String",
-      "description": "Description for elasticsearch.uri."
+      "description": "Description for json.persons."
     }
   ]
 }

@@ -1,5 +1,5 @@
 server:
-  port: 9099
+  port: 8083
   servlet:
     encoding:
       charset: UTF-8
@@ -13,12 +13,8 @@ spring:
       write_dates_as_timestamps: false
   elasticsearch:
     rest:
-      uris: elastic:9200
-
-#elasticsearch:
-#  uri: localhost:9200
+      uris: elasticsearch:9200
 
 json:
-  files:
-    - classpath:1.json
-    - classpath:2.json
+  loans: classpath:loans.json
+  persons: classpath:persons.json

@@ -17,5 +17,6 @@ import java.util.List;
 @ConfigurationProperties("json")
 public class JsonFileProperty {
 
-  private List<String> files = new ArrayList<>();
+  private String loans;
+  private String persons;
 }
